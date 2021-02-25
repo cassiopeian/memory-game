@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background-color: #e6e9eb;
+    box-sizing: border-box;
+    /* height: 100%;
+    width: 100%; */
+}
+header {
+    height: 100%;
+    background-color: #6f8aa8;
+    padding: 45px 0;
+}
+#banner-top {
+    background-color: rgba(230, 233, 235, 0.5);
+    width: 660px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#banner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+h1 {
+    font-family: 'Glass Antiqua', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 45px;
+    color: #6fa890;
+    /* margin: 50px 0 10px 0; */
+    text-align: center;
+}
+ul {
+    text-align: center;
+}
+li {
+    font-family: 'Glass Antiqua', cursive;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #a86f80;
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
+}
+#list-left {
+    border-right: 1px solid #4d4749;
+}
+#reset-btn {
+    background-color: #a86f80;
+    cursor: pointer;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    padding: 5px 20px;
+    border: none;
+}
+#gameboard {
+    background-color: #6f8aa8;
+    border: 10px solid #6f8aa8;
+    max-width: 900px;
+    margin: 20px auto 70px;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tile {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    border-bottom: 5px solid darkslategray;
+    border-right: 2px solid darkslategray;
+    background-image: url("../images/mmg-tile-back.svg");
+    background-color: #fff;
+    margin: 10px;
+}
+footer {
+    background-color: #a86f80;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
