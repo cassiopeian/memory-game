@@ -85,14 +85,17 @@ li {
     background-image: url("../images/mmg-tile-back.svg");
     background-color: #fff;
     margin: 10px;
+    cursor: pointer;
 }
 footer {
     background-color: #a86f80;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+#copyright {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 10px;
     color: #fff;
     padding: 10px 30px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
