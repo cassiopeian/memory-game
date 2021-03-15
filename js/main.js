@@ -14,9 +14,22 @@ function randomizeCards(object) {
     return arrKey[Math.floor(Math.random() * arrKey.length)];
 }
 
-$('.card-faces').each(function() {
-    randomCard = cardFaces[randomizeCards(cardFaces)];
-    $(this).attr('src', randomCard.image);
+// $('.card-faces').each(function() {
+//     randomCard = cardFaces[randomizeCards(cardFaces)];
+//     $(this).attr('src', randomCard.image);
+// });
+
+
+cardFaces.forEach(element => {
+    element = cardFaces[randomizeCards(cardFaces)];
+    
+    let gameTile = $('<figure class="tile"></figure>');
+    let cardImg = $('<img class="card-faces" src="" />');
+
+    $(cardImg).attr('src', element.image);  
+
+    $(gameTile).append(cardImg);
+    $('#container').append(gameTile);
 });
 
 $('.tile').on('click', function() {
