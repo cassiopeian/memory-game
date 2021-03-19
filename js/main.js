@@ -38,6 +38,15 @@ cardFaces.forEach(element => {
     $('#container').append(gameTile);
 });
 
+// make tile border "disappear"
+$('.tile').on('mousedown', function() {
+    $(this).css('borderColor', '#6f8aa8');
+});
+
+$('.tile').on('mouseup', function() {
+    $(this).css('borderColor', 'darkslategray');
+});
+
 // when tiles are clicked, replace tile bg with the card face img
 $('.tile').on('click', function() {
     $(this).css('backgroundImage', 'none');
