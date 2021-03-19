@@ -5,6 +5,12 @@ let cardFaces = [
     {
         image: 'images/card-faces/polaroid-camera.svg'
     },
+    {
+        image: 'images/card-faces/craft-beer-bottle.svg'
+    },
+    {
+        image: 'images/card-faces/rose-wine-bottle.svg'
+    }
 ];
 
 function randomizeCards(array) {
