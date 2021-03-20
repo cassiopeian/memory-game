@@ -10,6 +10,12 @@ let cardFaces = [
     },
     {
         image: 'images/card-faces/rose-wine-bottle.svg'
+    },
+    {
+        image: 'images/card-faces/bunny-ear-cactus.svg'
+    },
+    {
+        image: 'images/card-faces/snake-plant.png'
     }
 ];
 
