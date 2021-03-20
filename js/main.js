@@ -16,6 +16,12 @@ let cardFaces = [
     },
     {
         image: 'images/card-faces/snake-plant.png'
+    },
+    {
+        image: 'images/card-faces/midcentury-armchair.svg'
+    },
+    {
+        image: 'images/card-faces/midcentury-sofa.svg'
     }
 ];
 
