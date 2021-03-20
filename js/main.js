@@ -73,8 +73,13 @@ $('.tile').on('mouseup', function() {
 
 // when tiles are clicked, replace tile bg with the card face img
 $('.tile').on('click', function() {
-    $(this).css('backgroundImage', 'none');
-    $(this).children('img').css('display', 'block');
+    if ($(this).css('backgroundImage') == 'none') {
+        $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        $(this).children('img').css('display', 'none');
+    } else {
+        $(this).css('backgroundImage', 'none');
+        $(this).children('img').css('display', 'block');
+    }
 });
 
 
