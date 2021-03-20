@@ -22,6 +22,12 @@ let cardFaces = [
     },
     {
         image: 'images/card-faces/midcentury-sofa.svg'
+    },
+    {
+        image: 'images/card-faces/avocado-toast.svg'
+    },
+    {
+        image: 'images/card-faces/acai-bowl.svg'
     }
 ];
 
