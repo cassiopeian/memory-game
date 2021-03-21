@@ -57,9 +57,13 @@ cardFaces.forEach(element => {
     let gameTile = $('<figure class="tile"></figure>');
     let cardImg = $('<img class="card-faces" src="" />');
 
+    // add an array image to each img tag's src attribute
     $(cardImg).attr('src', element.image);  
 
+    // set an img inside each figure tag (i.e., game tile)
     $(gameTile).append(cardImg);
+
+    // place all the game tiles inside the gameboard container
     $('#container').append(gameTile);
 });
 
