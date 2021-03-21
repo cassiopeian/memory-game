@@ -1,3 +1,4 @@
+let headcount = 0;
 let cardFaces = [
     {
         image: 'images/card-faces/35mm-camera.svg'
@@ -76,12 +77,15 @@ $('.tile').on('click', function() {
     if ($(this).css('backgroundImage') == 'none') {
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
+        headcount--;
     } else {
         $(this).css('backgroundImage', 'none');
         $(this).children('img').css('display', 'block');
+        headcount++;
     }
+    
+    console.log(`headcount: ${headcount}`);
 });
-
 
 
 // function randomizeCards(object) {
