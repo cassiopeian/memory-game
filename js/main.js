@@ -1,4 +1,5 @@
 let headcount = 0;
+let pairChecker = [];
 let cardFaces = [
     {
         item: '35mm camera',
@@ -143,7 +144,11 @@ $('.tile').on('click', function() {
         headcount++;
     }
 
-    console.log(`headcount: ${headcount}`); 
+    console.log(`headcount: ${headcount}`);
+    
+    if ($(this).hasClass('heads-up') == true) {
+        pairChecker.push($(this).children('img').attr('src'));
+    }
 });
 
 // function randomizeCards(object) {
