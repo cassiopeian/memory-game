@@ -81,15 +81,18 @@ $('.tile').on('click', function() {
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
         headcount--;
+    } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
+        $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        $(this).children('img').css('display', 'none');
+        headcount = headcount;
     } else {
         $(this).css('backgroundImage', 'none');
         $(this).children('img').css('display', 'block');
         headcount++;
     }
-    
-    console.log(`headcount: ${headcount}`);
-});
 
+    console.log(`headcount: ${headcount}`); 
+});
 
 // function randomizeCards(object) {
 //     let arrKey = Object.keys(object);
