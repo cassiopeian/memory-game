@@ -1,33 +1,83 @@
 let headcount = 0;
 let cardFaces = [
     {
+        item: '35mm camera',
         image: 'images/card-faces/35mm-camera.svg'
     },
     {
+        item: 'polaroid',
         image: 'images/card-faces/polaroid-camera.svg'
     },
     {
+        item: 'beer',
         image: 'images/card-faces/craft-beer.svg'
     },
     {
+        item: 'wine',
         image: 'images/card-faces/rose-wine-bottle.svg'
     },
     {
+        item: 'cactus',
         image: 'images/card-faces/bunny-ear-cactus.svg'
     },
     {
+        item: 'snake plant',
         image: 'images/card-faces/snake-plant.png'
     },
     {
+        item: 'armchair',
         image: 'images/card-faces/midcentury-armchair.svg'
     },
     {
+        item: 'loveseat',
         image: 'images/card-faces/midcentury-sofa.svg'
     },
     {
+        item: 'avocado toast',
         image: 'images/card-faces/avocado-toast.svg'
     },
     {
+        item: 'acai bowl',
+        image: 'images/card-faces/acai-bowl.svg'
+    },
+    {
+        item: '35mm camera',
+        image: 'images/card-faces/35mm-camera.svg'
+    },
+    {
+        item: 'polaroid',
+        image: 'images/card-faces/polaroid-camera.svg'
+    },
+    {
+        item: 'beer',
+        image: 'images/card-faces/craft-beer.svg'
+    },
+    {
+        item: 'wine',
+        image: 'images/card-faces/rose-wine-bottle.svg'
+    },
+    {
+        item: 'cactus',
+        image: 'images/card-faces/bunny-ear-cactus.svg'
+    },
+    {
+        item: 'snake plant',
+        image: 'images/card-faces/snake-plant.png'
+    },
+    {
+        item: 'armchair',
+        image: 'images/card-faces/midcentury-armchair.svg'
+    },
+    {
+        item: 'loveseat',
+        image: 'images/card-faces/midcentury-sofa.svg'
+    },
+    {
+        item: 'avocado toast',
+        image: 'images/card-faces/avocado-toast.svg'
+    },
+    {
+        item: 'acai bowl',
         image: 'images/card-faces/acai-bowl.svg'
     }
 ];
