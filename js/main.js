@@ -128,6 +128,7 @@ $('.tile').on('mousedown', function() {
 // when tiles are clicked, replace tile bg with the card face img
 $('.tile').on('click', function() {
     if ($(this).css('backgroundImage') == 'none') {
+        $(this).removeClass('heads-up');
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
         headcount--;
@@ -136,6 +137,7 @@ $('.tile').on('click', function() {
         $(this).children('img').css('display', 'none');
         headcount = headcount;
     } else {
+        $(this).addClass('heads-up');
         $(this).css('backgroundImage', 'none');
         $(this).children('img').css('display', 'block');
         headcount++;
