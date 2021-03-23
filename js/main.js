@@ -1,5 +1,6 @@
 let headcount = 0;
-let pairChecker = [];
+let selectedPair = [];
+
 let cardFaces = [
     {
         item: '35mm camera',
@@ -133,6 +134,7 @@ $('.tile').on('click', function() {
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
         headcount--;
+        selectedPair.splice(0);
     } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
@@ -147,9 +149,34 @@ $('.tile').on('click', function() {
     console.log(`headcount: ${headcount}`);
     
     if ($(this).hasClass('heads-up') == true) {
-        pairChecker.push($(this).children('img').attr('src'));
-    }
+        selectedPair.push($(this).children('img').attr('src'));
+        console.log(selectedPair);
+    } 
+
+    pairChecker();
 });
+
+function pairChecker() {
+    // if the selectedPair array has two different items
+    if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
+        setTimeout(function() {
+            // empty the array
+            selectedPair.splice(0);
+
+            // reset headcount to zero
+            headcount = 0;
+
+            // clear the heads-up class from all figures
+            $('figure').removeClass('heads-up');
+            
+            // reapply all the tile-back images
+            $('figure').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+
+            // and hide all card-face images
+            $('figure').children('img').css('display', 'none');
+        }, 2500);
+    }
+};
 
 // function randomizeCards(object) {
 //     let arrKey = Object.keys(object);
