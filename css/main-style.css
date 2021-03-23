@@ -96,6 +96,9 @@ li {
     margin: auto;
     display: none;
 }
+.match {
+    cursor: not-allowed;
+}
 footer {
     background-color: #a86f80;
     position: relative;
