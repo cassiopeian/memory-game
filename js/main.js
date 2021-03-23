@@ -106,13 +106,13 @@ randomizeCards(cardFaces);
 
 // for each array element, create a game tile
 cardFaces.forEach(element => {
-    let gameTile = $('<figure class="tile"></figure>');
+    let gameTile = $('<button class="tile" type="button"></button>');
     let cardImg = $('<img class="card-faces" src="" />');
 
     // add an array image to each img tag's src attribute
     $(cardImg).attr('src', element.image);  
 
-    // set an img inside each figure tag (i.e., game tile)
+    // set an img inside each button (i.e., game tile)
     $(gameTile).append(cardImg);
 
     // place all the game tiles inside the gameboard container
@@ -123,7 +123,7 @@ cardFaces.forEach(element => {
 $('.tile').on('mousedown', function() {
     $(this).css('borderColor', '#6f8aa8');
     $('.tile').on('mouseup', function() {
-        $(this).css('borderColor', 'darkslategray');
+        $(this).css('borderColor', 'rgb(111, 138, 168)');
     });
 });
 
@@ -184,7 +184,8 @@ function pairChecker() {
         $('.heads-up').addClass('match').removeClass('heads-up mismatch');
         
         // ensure matched cards remain faceup
-        $('.match').css('backgroundImage', 'none');
+        $('button.tile.match').prop('disabled', 'true');
+        $('.match').css({'backgroundImage': 'none', 'borderColor': 'palevioletred'});
         $('.match').children('img').css('display', 'block');
     }
 };
