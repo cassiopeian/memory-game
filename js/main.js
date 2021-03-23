@@ -156,25 +156,36 @@ $('.tile').on('click', function() {
     pairChecker();
 });
 
+function resetSelectionAndCount() {
+    // empty the array
+    selectedPair.splice(0);
+
+    // reset headcount to zero
+    headcount = 0;
+};
+
 function pairChecker() {
     // if the selectedPair array has two different items
     if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
         setTimeout(function() {
-            // empty the array
-            selectedPair.splice(0);
+            resetSelectionAndCount();
 
-            // reset headcount to zero
-            headcount = 0;
+            // switch the .heads-up pair to .mismatch 
+            $('.heads-up').addClass('mismatch').removeClass('heads-up');
 
-            // clear the heads-up class from all figures
-            $('figure').removeClass('heads-up');
-            
-            // reapply all the tile-back images
-            $('figure').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
-
-            // and hide all card-face images
-            $('figure').children('img').css('display', 'none');
+            // "turn" the mismatched cards back over
+            $('.mismatch').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+            $('.mismatch').children('img').css('display', 'none');
         }, 2500);
+    } else if (selectedPair.length == 2 && selectedPair[0] == selectedPair[1]) {
+        resetSelectionAndCount();
+        
+        // switch the .heads-up pair to .match and remove possible .mismatch class
+        $('.heads-up').addClass('match').removeClass('heads-up mismatch');
+        
+        // ensure matched cards remain faceup
+        $('.match').css('backgroundImage', 'none');
+        $('.match').children('img').css('display', 'block');
     }
 };
 
