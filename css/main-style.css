@@ -66,7 +66,7 @@ li {
     border: none;
 }
 #gameboard {
-    background-color: #6f8aa8;
+    background-color: rgb(111, 138, 168);
     border: 10px solid #6f8aa8;
     max-width: 900px;
     margin: 20px auto 70px;
@@ -80,13 +80,21 @@ li {
     display: flex;
     width: 150px;
     height: 150px;
+    border-radius: 36px;
+    border-color: rgb(55, 69, 84);
     border-width: 0 2px 5px 0;
-    border-radius: 30px;
-    border-color: rgb(111, 138, 168);
+    border-style: solid;
     background-image: url("../images/mmg-tile-back.svg");
-    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     cursor: pointer;
+}
+.tile:focus {
+    box-shadow: hsl(212deg 25% 83%) 0px 0px 4px 3px;
+    outline: none;
 }
 .card-faces {
     /* max-width: 100px;
