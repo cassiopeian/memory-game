@@ -1,12 +1,19 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: -webkit-fill-available;
+}
 * {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: #e6e9eb;
     margin: 0;
     padding: 0;
-}
-html, body {
-    background-color: #e6e9eb;
-    box-sizing: border-box;
-    /* height: 100%;
-    width: 100%; */
 }
 header {
     height: 100%;
@@ -33,7 +40,6 @@ h1 {
     letter-spacing: 5px;
     font-size: 45px;
     color: #6fa890;
-    /* margin: 50px 0 10px 0; */
     text-align: center;
 }
 ul {
@@ -97,8 +103,6 @@ li {
     outline: none;
 }
 .card-faces {
-    /* max-width: 100px;
-    max-height: 100px; */
     max-width: 75%;
     max-height: 75%;
     margin: auto;
@@ -112,6 +116,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    margin-top: auto;
 }
 #copyright {
     font-family: 'Julius Sans One', sans-serif;
