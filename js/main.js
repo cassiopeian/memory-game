@@ -121,9 +121,9 @@ cardFaces.forEach(element => {
 
 // create a pressed-button effect
 $('.tile').on('mousedown', function() {
-    $(this).css('borderColor', '#6f8aa8');
+    $(this).css('borderColor', 'rgb(111, 138, 168)');
     $('.tile').on('mouseup', function() {
-        $(this).css('borderColor', 'rgb(111, 138, 168)');
+        $(this).css('borderColor', 'rgb(55, 69, 84)');
     });
 });
 
