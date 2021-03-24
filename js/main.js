@@ -185,7 +185,7 @@ function pairChecker() {
         
         // ensure matched cards remain faceup
         $('button.tile.match').prop('disabled', 'true');
-        $('.match').css({'backgroundImage': 'none', 'borderColor': 'palevioletred'});
+        $('.match').css({'backgroundImage': 'none', 'borderColor': 'rgb(156 45 81)'});
         $('.match').children('img').css('display', 'block');
     }
 };
