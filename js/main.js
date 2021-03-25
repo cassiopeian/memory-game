@@ -1,4 +1,8 @@
 let headcount = 0;
+let abandonedTiles = 0;
+let mismatchedPairs = 0;
+let matchedPairs = 0;
+let totalMoves = 0;
 let selectedPair = [];
 
 let cardFaces = [
@@ -100,7 +104,7 @@ function randomizeCards(array) {
     }
 
     return array;
-}
+};
 
 randomizeCards(cardFaces);
 
@@ -119,6 +123,53 @@ cardFaces.forEach(element => {
     $('#container').append(gameTile);
 });
 
+function countMoves() {
+    // headcount and selectedPair.length revert to 0 when a match is made, so the num of matched pairs is increased in pairChecker
+    if (selectedPair.length == 2) {
+        mismatchedPairs++;
+    }
+
+    totalMoves = abandonedTiles + matchedPairs + mismatchedPairs;
+    return totalMoves;
+};
+
+function resetSelectionAndCount() {
+    // empty the array
+    selectedPair.splice(0);
+
+    // reset headcount to zero
+    headcount = 0;
+};
+
+function pairChecker() {
+    if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
+        // the pair is mismatched, so the cards will turn back over in 2.5s
+        setTimeout(function() {
+            resetSelectionAndCount();
+
+            // switch the .heads-up pair to .mismatch 
+            $('.heads-up').addClass('mismatch').removeClass('heads-up');
+
+            // "turn" the mismatched cards back over
+            $('.mismatch').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+            $('.mismatch').children('img').css('display', 'none');
+        }, 2500);
+    } else if (selectedPair.length == 2 && selectedPair[0] == selectedPair[1]) {
+        resetSelectionAndCount();
+
+        // a match was made, so increase matchedPairs by 1
+        matchedPairs++;
+        
+        // switch the .heads-up pair to .match and remove possible .mismatch class
+        $('.heads-up').addClass('match').removeClass('heads-up mismatch');
+        
+        // ensure matched cards remain faceup
+        $('button.tile.match').prop('disabled', 'true');
+        $('.match').css({'backgroundImage': 'none', 'borderColor': 'rgb(156 45 81)'});
+        $('.match').children('img').css('display', 'block');
+    }
+};
+
 // create a pressed-button effect
 $('.tile').on('mousedown', function() {
     $(this).css('borderColor', 'rgb(111, 138, 168)');
@@ -127,13 +178,20 @@ $('.tile').on('mousedown', function() {
     });
 });
 
-// when tiles are clicked, replace tile bg with the card face img
 $('.tile').on('click', function() {
     if ($(this).css('backgroundImage') == 'none') {
+        // the tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         $(this).removeClass('heads-up');
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
+        
+        // remove the tile from headcount
         headcount--;
+
+        // when headcount is reduced by 1, increase abandonedTiles by 1
+        abandonedTiles++;
+
+        // clear the selectedPair array
         selectedPair.splice(0);
     } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
@@ -147,6 +205,7 @@ $('.tile').on('click', function() {
     }
 
     console.log(`headcount: ${headcount}`);
+    console.log(`abandoned tiles: ${abandonedTiles}`);
     
     if ($(this).hasClass('heads-up') == true) {
         selectedPair.push($(this).children('img').attr('src'));
@@ -154,38 +213,12 @@ $('.tile').on('click', function() {
     } 
 
     pairChecker();
+    
+    countMoves();
+    console.log(`moves: ${totalMoves}`);
 });
 
-function resetSelectionAndCount() {
-    // empty the array
-    selectedPair.splice(0);
-
-    // reset headcount to zero
-    headcount = 0;
-};
-
-function pairChecker() {
-    // if the selectedPair array has two different items
-    if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
-        setTimeout(function() {
-            resetSelectionAndCount();
-
-            // switch the .heads-up pair to .mismatch 
-            $('.heads-up').addClass('mismatch').removeClass('heads-up');
-
-            // "turn" the mismatched cards back over
-            $('.mismatch').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
-            $('.mismatch').children('img').css('display', 'none');
-        }, 2500);
-    } else if (selectedPair.length == 2 && selectedPair[0] == selectedPair[1]) {
-        resetSelectionAndCount();
-        
-        // switch the .heads-up pair to .match and remove possible .mismatch class
-        $('.heads-up').addClass('match').removeClass('heads-up mismatch');
-        
-        // ensure matched cards remain faceup
-        $('button.tile.match').prop('disabled', 'true');
-        $('.match').css({'backgroundImage': 'none', 'borderColor': 'rgb(156 45 81)'});
-        $('.match').children('img').css('display', 'block');
-    }
-};
+// reset the game
+$(document).on('click', '#reset-btn', function() {
+    location.reload(true);
+});
