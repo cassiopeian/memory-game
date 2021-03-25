@@ -130,7 +130,9 @@ function countMoves() {
     }
 
     totalMoves = abandonedTiles + matchedPairs + mismatchedPairs;
-    return totalMoves;
+    
+    // update the moves counter
+    $('#moves-num').html(totalMoves);
 };
 
 function resetSelectionAndCount() {
