@@ -15,17 +15,20 @@ body {
     margin: 0;
     padding: 0;
 }
-header {
-    height: 100%;
+#desktop-header,
+#mobile-header {
     background-color: #6f8aa8;
-    padding: 45px 0;
+    padding: 20px 0;
+} 
+#mobile-header {
+    display: none;
 }
-#banner-top {
+/* #banner-top {
     background-color: rgba(230, 233, 235, 0.5);
     width: 660px;
     margin: 0 auto;
     padding: 20px 0;
-}
+} */
 #banner-bottom {
     display: flex;
     justify-content: space-between;
@@ -41,23 +44,16 @@ h1 {
     font-size: 45px;
     color: #6fa890;
     text-align: center;
+    background-color: rgba(230, 233, 235, 0.5);
+    padding: 20px 10px;
+    margin: 0;
 }
-ul {
-    text-align: center;
+main {
+    display: flex;
+    flex-flow: row-reverse;
 }
-li {
-    font-family: 'Glass Antiqua', cursive;
-    text-transform: lowercase;
-    letter-spacing: 5px;
-    font-weight: bold;
-    font-size: 20px;
-    color: #a86f80;
-    list-style-type: none;
-    display: inline;
-    padding: 0 10px;
-}
-#list-left {
-    border-right: 1px solid #4d4749;
+#side-panel-content {
+    padding: 1rem;
 }
 #moves-counter {
     font-family: 'Glass Antiqua', cursive;
@@ -67,7 +63,7 @@ li {
     font-size: 20px;
     color: #a86f80;
 }
-#reset-btn {
+#reset {
     background-color: #a86f80;
     cursor: pointer;
     font-family: 'Julius Sans One', sans-serif;
@@ -83,7 +79,7 @@ li {
     background-color: rgb(111, 138, 168);
     border: 10px solid #6f8aa8;
     max-width: 900px;
-    margin: 20px auto 70px;
+    /* margin: 20px auto 70px; */
 }
 #container {
     display: flex;
@@ -130,5 +126,6 @@ footer {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 10px;
     color: #fff;
-    padding: 10px 30px;
+    padding: 8px 30px;
+    margin: 0;
 }
