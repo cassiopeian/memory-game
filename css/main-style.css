@@ -110,7 +110,7 @@ main {
     cursor: not-allowed;
 }
 footer {
-    background-color: #a86f80;
+    background-color: rgb(55, 69, 84);
     position: relative;
     width: 100%;
     bottom: 0;
