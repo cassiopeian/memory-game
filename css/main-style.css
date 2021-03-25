@@ -59,6 +59,14 @@ li {
 #list-left {
     border-right: 1px solid #4d4749;
 }
+#moves-counter {
+    font-family: 'Glass Antiqua', cursive;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #a86f80;
+}
 #reset-btn {
     background-color: #a86f80;
     cursor: pointer;
@@ -91,8 +99,8 @@ li {
     border-width: 0 2px 5px 0;
     border-style: solid;
     background-image: url("../images/mmg-tile-back.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     background-position: center;
     background-color: rgb(255, 255, 255);
     margin: 10px;
