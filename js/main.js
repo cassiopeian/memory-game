@@ -221,6 +221,6 @@ $('.tile').on('click', function() {
 });
 
 // reset the game
-$(document).on('click', '#reset-btn', function() {
+$(document).on('click', '#reset', function() {
     location.reload(true);
 });
