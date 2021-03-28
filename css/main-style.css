@@ -71,7 +71,7 @@ main {
     color: #a86f80;
 }
 #reset {
-    background-color: #a86f80;
+    background-color: rgb(206, 129, 164);
     cursor: pointer;
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
