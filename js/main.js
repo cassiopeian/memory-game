@@ -4,6 +4,7 @@ let mismatchedPairs = 0;
 let matchedPairs = 0;
 let totalMoves = 0;
 let selectedPair = [];
+let progNum = 0;
 
 let cardFaces = [
     {
@@ -180,6 +181,10 @@ function pairChecker() {
         $('.match').children('img').css('display', 'block');
 
         advanceProgress();
+
+        // increase the user's progress number by 1, and update #progress-x 
+        progNum++;
+        $('#progress-x').html(progNum);
     }
 };
 
