@@ -143,6 +143,15 @@ function resetSelectionAndCount() {
     headcount = 0;
 };
 
+// advance progress bar
+function advanceProgress() {
+    let hundoPercent = $('#progress-container').width();
+    let tenPercent = hundoPercent * 0.1;
+    let increaseProgress = tenPercent + $('#progress-bar').width();
+    
+    $('#progress-bar').css('width', increaseProgress);
+};
+
 function pairChecker() {
     if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
         // the pair is mismatched, so the cards will turn back over in 2.5s
@@ -169,6 +178,8 @@ function pairChecker() {
         $('button.tile.match').prop('disabled', 'true');
         $('.match').css({'backgroundImage': 'none', 'borderColor': 'rgb(156 45 81)'});
         $('.match').children('img').css('display', 'block');
+
+        advanceProgress();
     }
 };
 
