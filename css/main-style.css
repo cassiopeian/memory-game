@@ -71,7 +71,7 @@ main {
     color: #a86f80;
 }
 #reset {
-    background-color: rgb(206, 129, 164);
+    background-color: rgb(206, 130, 164);
     cursor: pointer;
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
@@ -81,6 +81,9 @@ main {
     display: block;
     padding: 5px 20px;
     border: none;
+}
+#reset:hover {
+    background-image: linear-gradient(45deg, rgb(222, 145, 168), transparent);
 }
 #gameboard {
     background-color: rgb(111, 138, 168);
