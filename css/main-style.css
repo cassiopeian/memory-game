@@ -58,7 +58,7 @@ main {
     background-color: rgba(178, 196, 202, .5);
 }
 #progress-bar {
-    width: 25%;
+    width: 0;
     background-color: #CDDC39;
     background-image: linear-gradient(8deg, #269c5b, transparent);
 }
