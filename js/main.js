@@ -120,8 +120,8 @@ cardFaces.forEach(element => {
     // set an img inside each button (i.e., game tile)
     $(gameTile).append(cardImg);
 
-    // place all the game tiles inside the gameboard container
-    $('#container').append(gameTile);
+    // place all the game tiles inside the gameboard
+    $('#gameboard').append(gameTile);
 });
 
 function countMoves() {
