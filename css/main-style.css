@@ -154,6 +154,16 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1313px) {
+    #gameboard {
+        row-gap: 4%;
+    }
+    .tile {
+        height: 125px;
+        width: 125px;
+    }
+}
+
 @media only screen and (max-width: 615px) {
     main {
         flex-flow: column-reverse;
@@ -165,6 +175,7 @@ footer {
         gap: 2%;
         width: 100%;
         height: 710px;
+        row-gap: 2%;
     }
     .tile {
         height: 120px;
