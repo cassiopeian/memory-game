@@ -47,7 +47,7 @@ main {
 }
 #moves-counter,
 #progress-tracker,
-#reset {
+.reset {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -81,7 +81,13 @@ main {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
-#reset {
+#desktop-reset {
+    display: block;
+}
+#mobile-reset {
+    display: none;
+}
+.reset {
     background-color: rgb(206, 130, 164);
     color: rgb(255, 255, 255);
     height: 1.5rem;
@@ -89,7 +95,7 @@ main {
     border: none;
     cursor: pointer;
 }
-#reset:hover {
+.reset:hover {
     background-image: linear-gradient(45deg, rgb(222, 145, 168), transparent);
 }
 #gameboard {
@@ -180,7 +186,51 @@ footer {
     #progress-tracker {
         padding-right: .5rem;
     }
-    #reset {
+    .reset {
         order: 3;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    header {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 2rem .5rem;
+    }
+    #gameboard {
+        height: 515px;
+    }
+    .tile {
+        height: 90px;
+        width: 90px;
+    }
+    #moves-counter,
+    #progress-tracker,
+    .reset {
+        font-size: .8rem;
+    }
+    .reset {
+        order: unset;
+    }
+    #progress-container {
+        width: 15rem;
+    }
+    #progress-container,
+    #progress-bar {
+        height: 1rem;
+    }
+    #desktop-reset {
+        display: none;
+    }
+    #mobile-reset {
+        display: block;
+        font-size: 1rem;
+        letter-spacing: .2rem;
+        width: 80%;
+        height: 2.3rem;
+        margin: .5rem auto;
+        border-radius: 100px;
     }
 }
