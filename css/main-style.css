@@ -193,6 +193,15 @@ footer {
     }
 }
 
+@media only screen and (max-width: 710px) {
+    #gameboard {
+        grid-template-columns: repeat(4, max-content);
+        grid-template-rows: repeat(5, max-content);
+        height: 760px;
+        gap: 3%;
+    }
+}
+
 @media only screen and (max-width: 615px) {
     #gameboard {
         gap: 2%;
