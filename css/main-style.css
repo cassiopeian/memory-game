@@ -19,14 +19,6 @@ header {
     /* background-color: #6f8aa8; */
     padding: 20px 0;
 } 
-#banner-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-top: 50px;
-}
 h1 {
     font-family: 'Glass Antiqua', cursive;
     font-size: 2rem;
