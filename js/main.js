@@ -5,6 +5,8 @@ let matchedPairs = 0;
 let totalMoves = 0;
 let selectedPair = [];
 let progNum = 0;
+let whole;
+let percentage;
 
 let cardFaces = [
     {
@@ -144,13 +146,16 @@ function resetSelectionAndCount() {
     headcount = 0;
 };
 
-// advance progress bar
+// since there are ten pairs, advance the progress bar by using the progNum as a percentage of the progress container (e.g., progNum 1 is 10%)
 function advanceProgress() {
-    let hundoPercent = $('#progress-container').width();
-    let tenPercent = hundoPercent * 0.1;
-    let increaseProgress = tenPercent + $('#progress-bar').width();
-    
-    $('#progress-bar').css('width', increaseProgress);
+    whole = $('#progress-container').width();
+    percentage = whole * `.${progNum}`;
+
+    if (progNum <= 9) {
+        $('#progress-bar').css('width', `${percentage}px`);
+    } else if (progNum == 10) {
+        $('#progress-bar').css('width', whole);
+    }
 };
 
 function pairChecker() {
@@ -179,8 +184,6 @@ function pairChecker() {
         $('button.tile.match').prop('disabled', 'true');
         $('.match').css({'backgroundImage': 'none', 'borderColor': 'rgb(156 45 81)'});
         $('.match').children('img').css('display', 'block');
-
-        advanceProgress();
 
         // increase the user's progress number by 1, and update #progress-x 
         progNum++;
@@ -234,6 +237,8 @@ $('.tile').on('click', function() {
     
     countMoves();
     console.log(`moves: ${totalMoves}`);
+
+    advanceProgress();
 });
 
 // reset the game
