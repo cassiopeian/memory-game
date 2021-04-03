@@ -15,6 +15,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
 header {
     /* background-color: #6f8aa8; */
     padding: 20px 0;
@@ -29,14 +34,28 @@ h1 {
     padding: 20px 10px;
     margin: 0;
 }
-main {
+#icons-wrapper {
     display: flex;
-    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.icons {
+    height: 1.2rem;
+    margin-left: .5rem;
+    cursor: pointer;
 }
 #side-panel-content {
     padding: 1rem;
 }
 #moves-counter,
+#progress-tracker {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+/* #moves-counter,
 #progress-tracker,
 .reset {
     font-family: 'Julius Sans One', sans-serif;
@@ -44,7 +63,7 @@ main {
     font-weight: bold;
     font-style: normal;
     text-transform: uppercase;
-}
+} */
 #your-progress {
     display: flex;
     align-items: center;
@@ -72,7 +91,7 @@ main {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
-#desktop-reset {
+/* #desktop-reset {
     display: block;
 }
 #mobile-reset {
@@ -88,7 +107,7 @@ main {
 }
 .reset:hover {
     background-image: linear-gradient(45deg, rgb(222, 145, 168), transparent);
-}
+} */
 #gameboard {
     display: grid;
     grid-template-columns: repeat(5, max-content);
@@ -178,9 +197,12 @@ footer {
         order: 2;
     }
     #progress-tracker {
-        padding-right: .5rem;
+        margin-right: .5rem;
     }
-    .reset {
+    /* .reset {
+        order: 3;
+    } */
+    #icons-wrapper {
         order: 3;
     }
 }
@@ -221,13 +243,17 @@ footer {
         width: 90px;
     }
     #moves-counter,
+    #progress-tracker {
+        font-size: .8rem;
+    }
+    /* #moves-counter,
     #progress-tracker,
     .reset {
         font-size: .8rem;
     }
     .reset {
         order: unset;
-    }
+    } */
     #progress-container {
         width: 15rem;
     }
@@ -235,7 +261,7 @@ footer {
     #progress-bar {
         height: 1rem;
     }
-    #desktop-reset {
+    /* #desktop-reset {
         display: none;
     }
     #mobile-reset {
@@ -246,5 +272,5 @@ footer {
         height: 2.3rem;
         margin: .5rem auto;
         border-radius: 100px;
-    }
+    } */
 }
