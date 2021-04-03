@@ -41,7 +41,7 @@ h1 {
 }
 .icons {
     height: 1.2rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
     cursor: pointer;
 }
 #side-panel-content {
@@ -224,5 +224,11 @@ footer {
     #progress-container,
     #progress-bar {
         height: 1rem;
+    }
+    .icons {
+        height: .9rem;
+    }
+    .icons:first-of-type {
+        margin-left: 0;
     }
 }
