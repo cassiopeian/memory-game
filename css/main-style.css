@@ -232,3 +232,9 @@ footer {
         margin-left: 0;
     }
 }
+
+@media only screen and (max-width: 415px) {
+    #progress-container {
+        width: 11rem;
+    }
+}
