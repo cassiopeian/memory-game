@@ -55,15 +55,6 @@ h1 {
     font-style: normal;
     text-transform: uppercase;
 }
-/* #moves-counter,
-#progress-tracker,
-.reset {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
-} */
 #your-progress {
     display: flex;
     align-items: center;
@@ -91,23 +82,6 @@ h1 {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
-/* #desktop-reset {
-    display: block;
-}
-#mobile-reset {
-    display: none;
-}
-.reset {
-    background-color: rgb(206, 130, 164);
-    color: rgb(255, 255, 255);
-    height: 1.5rem;
-    padding: 0 8px;
-    border: none;
-    cursor: pointer;
-}
-.reset:hover {
-    background-image: linear-gradient(45deg, rgb(222, 145, 168), transparent);
-} */
 #gameboard {
     display: grid;
     grid-template-columns: repeat(5, max-content);
@@ -199,9 +173,6 @@ footer {
     #progress-tracker {
         margin-right: .5rem;
     }
-    /* .reset {
-        order: 3;
-    } */
     #icons-wrapper {
         order: 3;
     }
@@ -246,14 +217,6 @@ footer {
     #progress-tracker {
         font-size: .8rem;
     }
-    /* #moves-counter,
-    #progress-tracker,
-    .reset {
-        font-size: .8rem;
-    }
-    .reset {
-        order: unset;
-    } */
     #progress-container {
         width: 15rem;
     }
@@ -261,16 +224,4 @@ footer {
     #progress-bar {
         height: 1rem;
     }
-    /* #desktop-reset {
-        display: none;
-    }
-    #mobile-reset {
-        display: block;
-        font-size: 1rem;
-        letter-spacing: .2rem;
-        width: 80%;
-        height: 2.3rem;
-        margin: .5rem auto;
-        border-radius: 100px;
-    } */
 }
