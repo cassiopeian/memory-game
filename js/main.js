@@ -242,7 +242,7 @@ $('.tile').on('click', function() {
 });
 
 // ensure the progress bar is accurate, on window resize 
-$(window).on('resize', addProgress);
+$(window).on('resize', advanceProgress);
 
 // reset the game
 $(document).on('click', '#reset-icon', function() {
