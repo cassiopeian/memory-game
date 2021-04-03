@@ -245,6 +245,6 @@ $('.tile').on('click', function() {
 $(window).on('resize', addProgress);
 
 // reset the game
-$(document).on('click', '.reset', function() {
+$(document).on('click', '#reset-icon', function() {
     location.reload(true);
 });
