@@ -102,8 +102,8 @@ h1 {
 }
 .tile {
     display: flex;
-    width: 145px;
-    height: 145px;
+    width: 9.06rem;
+    height: 9.06rem;
     border-radius: 24%;
     border-color: rgb(55, 69, 84);
     border-width: 0 2px 5px 0;
@@ -150,8 +150,8 @@ footer {
         gap: 2%;
     }
     .tile {
-        height: 125px;
-        width: 125px;
+        height: 7.812rem;
+        width: 7.812rem;
     }
 }
 
@@ -198,8 +198,8 @@ footer {
         gap: 2%;
     }
     .tile {
-        height: 120px;
-        width: 120px;
+        height: 7.5rem;
+        width: 7.5rem;
     }
 }
 
@@ -211,9 +211,12 @@ footer {
         font-size: 1.5rem;
         padding: 2rem .5rem;
     }
+    #gameboard-container {
+        padding: 1.35rem 0;
+    }
     .tile {
-        height: 90px;
-        width: 90px;
+        height: 6rem;
+        width: 6rem;
     }
     #moves-counter,
     #progress-tracker {
