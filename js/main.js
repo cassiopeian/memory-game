@@ -91,6 +91,29 @@ let cardFaces = [
     }
 ];
 
+let catDeck = [
+    {
+        item: 'black Neko',
+        image: 'images/cat-deck/neko-black.svg'
+    },
+    {
+        item: 'white Neko',
+        image: 'images/cat-deck/neko-white.svg'
+    },
+    {
+        item: 'red Neko',
+        image: 'images/cat-deck/neko-red.svg'
+    },
+    {
+        item: 'yellow Neko',
+        image: 'images/cat-deck/neko-yellow.svg'
+    },
+    {
+        item: 'green Neko',
+        image: 'images/cat-deck/neko-green.svg'
+    }
+];
+
 function randomizeCards(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
