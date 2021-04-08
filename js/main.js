@@ -131,6 +131,46 @@ let catDeck = [
     {
         item: 'green Neko',
         image: 'images/cat-deck/neko-green.svg'
+    },
+    {
+        item: 'tuxedo Neko',
+        image: 'images/cat-deck/neko-tuxedo.svg'
+    },
+    {
+        item: 'ginger Neko',
+        image: 'images/cat-deck/neko-ginger.svg'
+    },
+    {
+        item: 'grey Neko',
+        image: 'images/cat-deck/neko-grey.svg'
+    },
+    {
+        item: 'tortie Neko',
+        image: 'images/cat-deck/neko-tortie.svg'
+    },
+    {
+        item: 'calico Neko',
+        image: 'images/cat-deck/neko-calico.svg'
+    },
+    {
+        item: 'black Neko',
+        image: 'images/cat-deck/neko-black.svg'
+    },
+    {
+        item: 'white Neko',
+        image: 'images/cat-deck/neko-white.svg'
+    },
+    {
+        item: 'red Neko',
+        image: 'images/cat-deck/neko-red.svg'
+    },
+    {
+        item: 'yellow Neko',
+        image: 'images/cat-deck/neko-yellow.svg'
+    },
+    {
+        item: 'green Neko',
+        image: 'images/cat-deck/neko-green.svg'
     }
 ];
 
