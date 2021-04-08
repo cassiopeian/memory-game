@@ -55,10 +55,10 @@ h1 {
     font-style: normal;
     text-transform: uppercase;
 }
-#your-progress {
+#progress-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #progress-tracker {
     font-weight: 400;
@@ -173,7 +173,7 @@ footer {
         order: 1;
         margin: 0;
     }
-    #your-progress {
+    #progress-wrapper {
         order: 2;
     }
     #progress-tracker {
