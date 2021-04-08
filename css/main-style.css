@@ -41,8 +41,10 @@ h1 {
 }
 .icons {
     height: 1.2rem;
-    margin-left: 1rem;
     cursor: pointer;
+}
+#settings-icon {
+    margin-left: 1rem;
 }
 #side-panel-content {
     padding: 1rem;
@@ -201,6 +203,20 @@ footer {
         height: 7.5rem;
         width: 7.5rem;
     }
+    #moves-counter,
+    #progress-tracker {
+        font-size: .8rem;
+    }
+    #progress-container {
+        width: 15rem;
+    }
+    #progress-container,
+    #progress-bar {
+        height: 1rem;
+    }
+    .icons {
+        height: .9rem;
+    }
 }
 
 @media only screen and (max-width: 570px) {
@@ -217,23 +233,6 @@ footer {
     .tile {
         height: 6rem;
         width: 6rem;
-    }
-    #moves-counter,
-    #progress-tracker {
-        font-size: .8rem;
-    }
-    #progress-container {
-        width: 15rem;
-    }
-    #progress-container,
-    #progress-bar {
-        height: 1rem;
-    }
-    .icons {
-        height: .9rem;
-    }
-    .icons:first-of-type {
-        margin-left: 0;
     }
 }
 
