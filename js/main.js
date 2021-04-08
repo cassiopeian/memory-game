@@ -93,6 +93,26 @@ let cardFaces = [
 
 let catDeck = [
     {
+        item: 'tuxedo Neko',
+        image: 'images/cat-deck/neko-tuxedo.svg'
+    },
+    {
+        item: 'ginger Neko',
+        image: 'images/cat-deck/neko-ginger.svg'
+    },
+    {
+        item: 'grey Neko',
+        image: 'images/cat-deck/neko-grey.svg'
+    },
+    {
+        item: 'tortie Neko',
+        image: 'images/cat-deck/neko-tortie.svg'
+    },
+    {
+        item: 'calico Neko',
+        image: 'images/cat-deck/neko-calico.svg'
+    },
+    {
         item: 'black Neko',
         image: 'images/cat-deck/neko-black.svg'
     },
