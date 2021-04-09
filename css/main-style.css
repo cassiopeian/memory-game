@@ -312,4 +312,8 @@ footer {
     #progress-container {
         width: 11rem;
     }
+    .tile {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
 }
