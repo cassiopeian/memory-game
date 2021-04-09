@@ -317,3 +317,10 @@ footer {
         width: 5.5rem;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .tile {
+        height: 5rem;
+        width: 5rem;
+    }
+}
