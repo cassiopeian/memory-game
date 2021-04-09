@@ -331,3 +331,8 @@ $(window).on('resize', advanceProgress);
 $(document).on('click', '#reset-icon', function() {
     location.reload(true);
 });
+
+// open the settings 
+$('#settings-icon').on('click', function() {
+    $('aside').css('display', 'block');
+});
