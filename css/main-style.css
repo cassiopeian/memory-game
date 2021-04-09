@@ -36,7 +36,7 @@ h1 {
 }
 #icons-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 1.5rem;
 }
 .icons {
@@ -47,7 +47,7 @@ h1 {
     margin-left: 1rem;
 }
 #side-panel-content {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
 #moves-counter,
 #progress-tracker {
@@ -86,7 +86,7 @@ h1 {
 }
 #gameboard-container {
     display: flex;
-    width: 75%;
+    width: 70%;
     padding: 1.5rem 0;
     background-color: rgb(111, 138, 168);
 }
