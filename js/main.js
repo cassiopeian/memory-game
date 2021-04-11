@@ -276,13 +276,15 @@ function pairChecker() {
     }
 };
 
+$(document).on('mousedown', '.tile', pressedButton);
+
 // create a pressed-button effect
-$('.tile').on('mousedown', function() {
+function pressedButton() {
     $(this).css('borderColor', 'rgb(111, 138, 168)');
     $('.tile').on('mouseup', function() {
         $(this).css('borderColor', 'rgb(55, 69, 84)');
     });
-});
+};
 
 $(document).on('click', '.tile', selectTile);
 
