@@ -340,3 +340,22 @@ $(document).on('click', '#reset-icon', function() {
 $('#settings-icon').on('click', function() {
     $('aside').css('display', 'block');
 });
+
+function cleanSlate() {
+    // clear the number of moves and the progress bar
+    headcount = 0;
+    abandonedTiles = 0;
+    mismatchedPairs = 0;
+    matchedPairs = 0;
+    totalMoves = 0;
+    progNum = 0;
+    $('#moves-num').html(totalMoves);
+    $('#progress-x').html(progNum);
+    advanceProgress();
+
+    // close the settings box
+    $('aside').css('display', 'none');
+
+    // clear the gameboard
+    $('#gameboard').children('button').remove();
+};
