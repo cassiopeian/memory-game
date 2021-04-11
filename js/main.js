@@ -359,3 +359,26 @@ function cleanSlate() {
     // clear the gameboard
     $('#gameboard').children('button').remove();
 };
+
+// selects the "lucky cats" theme
+$('#cats').on('click', function() {
+    cleanSlate();
+
+    randomizeCards(catDeck);
+
+    catDeck.forEach(cat => {
+        gameTile = $('<button class="tile" type="button"></button>');
+        cardImg = $('<img class="card-faces" src="" />');
+
+        // add an array image to each img tag's src attribute
+        $(cardImg).attr('src', cat.image);  
+
+        // set an img inside each button (i.e., game tile)
+        $(gameTile).append(cardImg);
+
+        // place all the game tiles inside the gameboard
+        $('#gameboard').append(gameTile);
+    });
+
+    selectTile();
+});
