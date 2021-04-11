@@ -284,7 +284,9 @@ $('.tile').on('mousedown', function() {
     });
 });
 
-$('.tile').on('click', function() {
+$(document).on('click', '.tile', selectTile);
+
+function selectTile() {
     if ($(this).css('backgroundImage') == 'none') {
         // the tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         $(this).removeClass('heads-up');
@@ -324,7 +326,7 @@ $('.tile').on('click', function() {
     console.log(`moves: ${totalMoves}`);
 
     advanceProgress();
-});
+};
 
 // ensure the progress bar is accurate, on window resize 
 $(window).on('resize', advanceProgress);
