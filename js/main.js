@@ -7,6 +7,8 @@ let selectedPair = [];
 let progNum = 0;
 let whole;
 let percentage;
+let gameTile;
+let cardImg;
 
 let cardFaces = [
     {
@@ -196,8 +198,8 @@ randomizeCards(cardFaces);
 
 // for each array element, create a game tile
 cardFaces.forEach(element => {
-    let gameTile = $('<button class="tile" type="button"></button>');
-    let cardImg = $('<img class="card-faces" src="" />');
+    gameTile = $('<button class="tile" type="button"></button>');
+    cardImg = $('<img class="card-faces" src="" />');
 
     // add an array image to each img tag's src attribute
     $(cardImg).attr('src', element.image);  
