@@ -319,6 +319,16 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+    #progress-container {
+        width: 10rem;
+    }
+    #progress-container,
+    #progress-bar {
+        height: .8rem;
+    }
+    #settings-icon {
+        margin-left: .5rem;
+    }
     .tile {
         height: 5rem;
         width: 5rem;
