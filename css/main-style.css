@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 html {
     font-size: 16px;
     box-sizing: border-box;
@@ -15,6 +17,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* MAIN */
 
 main {
     display: flex;
@@ -38,6 +42,9 @@ h1 {
     padding: 20px 10px;
     margin: 0;
 }
+
+/* SIDE PANEL CONTENT */
+
 #icons-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -88,6 +95,9 @@ h1 {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
+
+/* GAMEBOARD */
+
 #gameboard-container {
     display: flex;
     width: 70%;
@@ -201,6 +211,8 @@ h2 {
     text-align: center;
     color: rgb(55, 69, 84);
 }
+
+/* FOOTER */
 
 footer {
     background-color: rgb(55, 69, 84);
