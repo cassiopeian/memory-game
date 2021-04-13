@@ -243,6 +243,23 @@ function advanceProgress() {
     }
 };
 
+// announce the name of the matched item
+function announceMatch() {
+    // by looping through the game array
+    cardFaces.forEach(matched => {
+        // to check whether the object's image property matches the image paths currently sitting in the selectedPair array (at this point in pairChecker, index items 0 and 1 are the same)
+        if (matched.image == selectedPair[0]) {
+            $('#match-type').html(`${matched.item}!`);
+        }
+    });
+
+    catDeck.forEach(matched => {
+        if (matched.image == selectedPair[0]) {
+            $('#match-type').html(`${matched.item}!`);
+        }
+    });
+};
+
 function pairChecker() {
     if (selectedPair.length == 2 && selectedPair[0] !== selectedPair[1]) {
         // the pair is mismatched, so the cards will turn back over in 2.5s
@@ -257,6 +274,8 @@ function pairChecker() {
             $('.mismatch').children('img').css('display', 'none');
         }, 2500);
     } else if (selectedPair.length == 2 && selectedPair[0] == selectedPair[1]) {
+        announceMatch();
+        
         resetSelectionAndCount();
 
         // a match was made, so increase matchedPairs by 1
