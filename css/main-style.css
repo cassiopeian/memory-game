@@ -95,6 +95,15 @@ h1 {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
+#match-type {
+    font-family: 'Glass Antiqua', cursive;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgb(55, 69, 84);
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    text-align: center;
+}
 
 /* GAMEBOARD */
 
