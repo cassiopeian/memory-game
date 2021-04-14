@@ -95,6 +95,17 @@ h1 {
 #moves-counter {
     color: rgb(206, 130, 164);
 }
+#match-announcement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/green-match.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 4.5rem;
+    width: 13rem;
+    margin: 1rem auto;
+}
 #match-type {
     font-family: 'Glass Antiqua', cursive;
     font-style: normal;
