@@ -96,9 +96,7 @@ h1 {
     color: rgb(206, 130, 164);
 }
 #match-announcement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
     background-image: url('../images/green-match.svg');
     background-repeat: no-repeat;
     background-size: auto;
@@ -109,11 +107,14 @@ h1 {
 #match-type {
     font-family: 'Glass Antiqua', cursive;
     font-style: normal;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
     color: rgb(55, 69, 84);
-    text-transform: uppercase;
-    letter-spacing: .05rem;
+    text-transform: lowercase;
+    letter-spacing: .4rem;
     text-align: center;
+    padding: 1.7rem 0 0 0;
+    margin: 0;
 }
 
 /* GAMEBOARD */
