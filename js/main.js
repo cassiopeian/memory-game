@@ -36,8 +36,8 @@ let cardFaces = [
         image: 'images/card-faces/snake-plant.png'
     },
     {
-        item: 'armchair',
-        image: 'images/card-faces/midcentury-armchair.svg'
+        item: 'fixie',
+        image: 'images/card-faces/fixie-bike.svg'
     },
     {
         item: 'loveseat',
@@ -76,8 +76,8 @@ let cardFaces = [
         image: 'images/card-faces/snake-plant.png'
     },
     {
-        item: 'armchair',
-        image: 'images/card-faces/midcentury-armchair.svg'
+        item: 'fixie',
+        image: 'images/card-faces/fixie-bike.svg'
     },
     {
         item: 'loveseat',
