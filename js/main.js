@@ -20,11 +20,11 @@ let cardFaces = [
         image: 'images/card-faces/polaroid-camera.svg'
     },
     {
-        item: 'beer',
+        item: 'craft beer',
         image: 'images/card-faces/craft-beer.svg'
     },
     {
-        item: 'wine',
+        item: 'rosé',
         image: 'images/card-faces/rose-wine-bottle.svg'
     },
     {
@@ -48,7 +48,7 @@ let cardFaces = [
         image: 'images/card-faces/avocado-toast.svg'
     },
     {
-        item: 'acai bowl',
+        item: 'açai bowl',
         image: 'images/card-faces/acai-bowl.svg'
     },
     {
@@ -60,11 +60,11 @@ let cardFaces = [
         image: 'images/card-faces/polaroid-camera.svg'
     },
     {
-        item: 'beer',
+        item: 'craft beer',
         image: 'images/card-faces/craft-beer.svg'
     },
     {
-        item: 'wine',
+        item: 'rosé',
         image: 'images/card-faces/rose-wine-bottle.svg'
     },
     {
@@ -88,7 +88,7 @@ let cardFaces = [
         image: 'images/card-faces/avocado-toast.svg'
     },
     {
-        item: 'acai bowl',
+        item: 'açai bowl',
         image: 'images/card-faces/acai-bowl.svg'
     }
 ];
