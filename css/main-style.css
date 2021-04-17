@@ -354,6 +354,9 @@ footer {
     #gameboard-container {
         padding: 1rem 0;
     }
+    #gameboard {
+        padding: 2.25rem;
+    }
     #progress-container {
         width: 11rem;
     }
