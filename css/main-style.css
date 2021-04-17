@@ -45,6 +45,9 @@ h1 {
 
 /* SIDE PANEL CONTENT */
 
+#side-panel {
+    width: 30%;
+}
 #icons-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -268,6 +271,9 @@ footer {
         flex-grow: 0;
     }
     #gameboard-container {
+        width: 100%;
+    }
+    #side-panel {
         width: 100%;
     }
     #side-panel-content {
