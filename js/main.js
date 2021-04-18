@@ -9,6 +9,7 @@ let whole;
 let percentage;
 let gameTile;
 let cardImg;
+let thirdCardClicked;
 
 let cardFaces = [
     {
@@ -212,8 +213,8 @@ cardFaces.forEach(element => {
 });
 
 function countMoves() {
-    // headcount and selectedPair.length revert to 0 when a match is made, so the num of matched pairs is increased in pairChecker
-    if (selectedPair.length == 2) {
+    // selectedPair.length reverts to 0 when a match is made, so if there are two elements in the selectedPair array and a third card hasn't been clicked, increase mismatchedPairs by 1
+    if (selectedPair.length == 2 && thirdCardClicked == false) {
         mismatchedPairs++;
     }
 
@@ -315,6 +316,7 @@ $(document).on('click', '.tile', selectTile);
 
 function selectTile() {
     if ($(this).css('backgroundImage') == 'none') {
+        thirdCardClicked = false;
         // the tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         $(this).removeClass('heads-up');
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
@@ -329,10 +331,12 @@ function selectTile() {
         // clear the selectedPair array
         selectedPair.splice(0);
     } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
+        thirdCardClicked = true;
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
         headcount = headcount;
     } else {
+        thirdCardClicked = false;
         $(this).addClass('heads-up');
         $(this).css('backgroundImage', 'none');
         $(this).children('img').css('display', 'block');
