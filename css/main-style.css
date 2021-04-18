@@ -110,6 +110,7 @@ h1 {
 }
 #match-type {
     font-family: 'Glass Antiqua', cursive;
+    font-variant-ligatures: no-common-ligatures;
     font-style: normal;
     font-weight: bold;
     font-size: 1.1rem;
