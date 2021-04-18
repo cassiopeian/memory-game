@@ -32,6 +32,7 @@ h1,
 h2 {
     font-family: 'Glass Antiqua', cursive;
     font-style: normal;
+    font-variant-ligatures: no-common-ligatures;
     color: #6fa890;
     text-align: center;
 }
