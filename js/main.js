@@ -212,9 +212,11 @@ cardFaces.forEach(element => {
     $('#gameboard').append(gameTile);
 });
 
+// selectedPair.length reverts to 0 when a match is made, so . . .
 function countMoves() {
-    // selectedPair.length reverts to 0 when a match is made, so if there are two elements in the selectedPair array and a third card hasn't been clicked, increase mismatchedPairs by 1
+    // if selectedPair.length == 2 and a third card hasn't been clicked . . .
     if (selectedPair.length == 2 && thirdCardClicked == false) {
+        // increase mismatchedPairs by 1
         mismatchedPairs++;
     }
 
@@ -316,8 +318,8 @@ $(document).on('click', '.tile', selectTile);
 
 function selectTile() {
     if ($(this).css('backgroundImage') == 'none') {
+        // a single tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         thirdCardClicked = false;
-        // the tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         $(this).removeClass('heads-up');
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
@@ -331,11 +333,13 @@ function selectTile() {
         // clear the selectedPair array
         selectedPair.splice(0);
     } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
+        // a third card has been clicked, so it should remain unturned
         thirdCardClicked = true;
         $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
         $(this).children('img').css('display', 'none');
         headcount = headcount;
     } else {
+        // turn over a first or second selection
         thirdCardClicked = false;
         $(this).addClass('heads-up');
         $(this).css('backgroundImage', 'none');
@@ -346,13 +350,15 @@ function selectTile() {
     console.log(`headcount: ${headcount}`);
     console.log(`abandoned tiles: ${abandonedTiles}`);
     
+    // if a tile is faceup 
     if ($(this).hasClass('heads-up') == true) {
+        // push its img src path into the selectedPair array
         selectedPair.push($(this).children('img').attr('src'));
         console.log(selectedPair);
     } 
 
     pairChecker();
-    
+
     countMoves();
     console.log(`moves: ${totalMoves}`);
 
