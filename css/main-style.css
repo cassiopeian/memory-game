@@ -146,11 +146,13 @@ h1 {
     display: flex;
     width: 9.06rem;
     height: 9.06rem;
-    border-radius: 24%;
+    /* border-radius: 24%; */
+    border-radius: 20%;
     border-color: rgb(55, 69, 84);
     border-width: 0 2px 5px 0;
     border-style: solid;
-    background-image: url("../images/mmg-tile-back.svg");
+    /* background-image: url("../images/mmg-tile-back.svg"); */
+    background-image: url("../images/moroccan-tile.svg");
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-position: center;
