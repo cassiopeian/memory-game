@@ -279,7 +279,8 @@ function pairChecker() {
             $('.heads-up').addClass('mismatch').removeClass('heads-up');
 
             // "turn" the mismatched cards back over
-            $('.mismatch').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+            // $('.mismatch').css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+            $('.mismatch').css('backgroundImage', 'url("images/moroccan-tile.svg")');
             $('.mismatch').children('img').css('display', 'none');
         }, 2500);
     } else if (selectedPair.length == 2 && selectedPair[0] == selectedPair[1]) {
@@ -321,7 +322,8 @@ function selectTile() {
         // a single tile is faceup and needs to be turned back over, because the user has changed their mind before selecting a second tile 
         thirdCardClicked = false;
         $(this).removeClass('heads-up');
-        $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        // $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        $(this).css('backgroundImage', 'url("images/moroccan-tile.svg")');
         $(this).children('img').css('display', 'none');
         
         // remove the tile from headcount
@@ -335,7 +337,8 @@ function selectTile() {
     } else if (headcount == 2 && $(this).css('backgroundImage') !== 'none') {
         // a third card has been clicked, so it should remain unturned
         thirdCardClicked = true;
-        $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        // $(this).css('backgroundImage', 'url("images/mmg-tile-back.svg")');
+        $(this).css('backgroundImage', 'url("images/moroccan-tile.svg")');
         $(this).children('img').css('display', 'none');
         headcount = headcount;
     } else {
