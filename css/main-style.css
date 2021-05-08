@@ -355,10 +355,13 @@ footer {
     }
     #gameboard-container {
         /* padding: 1rem 0; */
-        padding: 0 0 1rem 0;
+        /* padding: 0 0 1rem 0; */
+        padding: 0;
     }
     #gameboard {
-        padding: 2.25rem 0;
+        /* padding: 2.25rem 0; */
+        padding: 1rem;
+        margin: 1rem 0;
     }
     #progress-container {
         width: 11rem;
