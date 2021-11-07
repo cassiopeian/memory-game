@@ -126,7 +126,7 @@ h1 {
 
 #gameboard-container {
     display: flex;
-    width: 70%;
+    width: 65%;
     padding: 1.5rem 0;
     background-color: rgb(222, 167, 167);
 }
