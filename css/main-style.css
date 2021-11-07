@@ -88,7 +88,7 @@ h2 {
 }
 #progress-container,
 #progress-bar {
-    height: 1.5rem;
+    height: 1rem;
     border-radius: 100px;
 }
 #progress-container {
@@ -326,10 +326,6 @@ footer {
     }
     #progress-container {
         width: 15rem;
-    }
-    #progress-container,
-    #progress-bar {
-        height: 1rem;
     }
     .icons {
         height: .9rem;
