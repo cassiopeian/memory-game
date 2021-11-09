@@ -1,5 +1,11 @@
 # Memory Game
 
+## Table of Contents
+
+ + [Introduction](#introduction)
+ + [Favicon](#favicon)
+ + [Tech Specs](#tech-specs)
+
 ## Introduction
 
  ![Homepage screenshot](images/read-me/homepage.png "Homepage screenshot")
