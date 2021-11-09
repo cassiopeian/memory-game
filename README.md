@@ -3,6 +3,7 @@
 ## Table of Contents
 
  + [Introduction](#introduction)
+ + [Features](#features)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
 
@@ -11,6 +12,11 @@
  ![Homepage screenshot](images/read-me/homepage.png "Homepage screenshot")
 
  Do you have the recall of an elephant, or are you more of a goldfish? Test your retention skills with [Millennial Memory Game](https://cassiopeian.github.io/memory-game/).
+
+## Features
+ <img src="images/read-me/choose-theme.png" style="width: 75%">
+
+ To choose between the Lifestyle Trends and Lucky Cats game themes, click the cogwheel icon.
 
 ## Favicon
 
