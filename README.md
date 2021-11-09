@@ -11,3 +11,7 @@
  <img src="images/thinking-brain.png" style="width: 25%">
 
  Here's a better look at the thinking-brain favicon you'll see on your Millennial Memory Game browser tab.
+
+## Tech Specs
+
+ Millennial Memory Game was built with jQuery version 3.4.1.
