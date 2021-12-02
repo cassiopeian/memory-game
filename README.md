@@ -4,6 +4,7 @@
 
  + [Introduction](#introduction)
  + [Features](#features)
+    - [Two Themes](#two-themes)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
 
@@ -16,7 +17,7 @@
 ## Features
 
  ### Two Themes
- 
+
  <img src="images/read-me/choose-theme.png" style="width: 75%">
 
  To choose between the Lifestyle Trends and Lucky Cats game themes, click the cogwheel icon.
