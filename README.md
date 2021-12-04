@@ -5,6 +5,7 @@
  + [Introduction](#introduction)
  + [Features](#features)
     - [Two Themes](#two-themes)
+    - [Progress at a Glance](#progress-at-a-glance)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
 
