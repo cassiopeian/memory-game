@@ -22,6 +22,10 @@
 
  To choose between the Lifestyle Trends and Lucky Cats game themes, click the cogwheel icon.
 
+ ### Progress at a Glance
+
+ <img src="images/read-me/progress-bar.png" style="width: 75%">
+
 ## Favicon
 
  <img src="images/thinking-brain.png" style="width: 25%">
