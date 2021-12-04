@@ -27,6 +27,8 @@
 
  <img src="images/read-me/progress-bar.png" style="width: 75%">
 
+ Watch the green progress bar grow, each time you find a matching pair. To the left of the progress bar, you can also track exactly how many matches you’ve made, out of ten.
+
 ## Favicon
 
  <img src="images/thinking-brain.png" style="width: 25%">
