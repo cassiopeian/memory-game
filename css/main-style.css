@@ -58,6 +58,11 @@ h2 {
     justify-content: flex-end;
     margin-bottom: 1.5rem;
 }
+#icons-wrapper button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
 .icons {
     height: 1.2rem;
     cursor: pointer;
