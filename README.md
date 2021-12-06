@@ -22,6 +22,12 @@
 
  <img src="images/read-me/tile-glow.png" style="width: 75%">
 
+ The game tiles glow white when they’re clicked, and your most recently clicked tile will remain glowing even after it returns to its facedown state.
+
+ If you’d prefer to play without a mouse, you can also tab through the game tiles, and use the white glow as a navigation aide.
+
+ The reset and settings buttons are also keyboard focusable.
+
  ### Two Themes
 
  <img src="images/read-me/choose-theme.png" style="width: 75%">
