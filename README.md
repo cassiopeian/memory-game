@@ -4,6 +4,7 @@
 
  + [Introduction](#introduction)
  + [Features](#features)
+    - [Accessibility](#accessibility)
     - [Two Themes](#two-themes)
     - [Progress at a Glance](#progress-at-a-glance)
  + [Favicon](#favicon)
