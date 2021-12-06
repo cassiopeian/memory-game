@@ -17,6 +17,10 @@
 
 ## Features
 
+ ### Accessibility
+
+ <img src="images/read-me/tile-glow.png" style="width: 75%">
+
  ### Two Themes
 
  <img src="images/read-me/choose-theme.png" style="width: 75%">
