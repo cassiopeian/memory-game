@@ -26,7 +26,7 @@
 
  If you’d prefer to play without a mouse, you can also tab through the game tiles, and use the white glow as a navigation aide.
 
- The reset and settings buttons are also keyboard focusable.
+ The *Reset* and *Settings* icon buttons are also keyboard focusable.
 
  ### Two Themes
 
