@@ -40,6 +40,8 @@
 
  Watch the green progress bar grow, each time you find a matching pair. To the left of the progress bar, you can also track exactly how many matches you’ve made, out of ten.
 
+ The *Moves* counter will increase by one, each time you select a pair of tiles *or* immediately deselect a single tile.
+
 ## Favicon
 
  <img src="images/thinking-brain.png" style="width: 25%">
