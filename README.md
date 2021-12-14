@@ -42,6 +42,12 @@
 
  The *Moves* counter will increase by one, each time you select a pair of tiles *or* immediately deselect a single tile.
 
+ ### Match Alert
+
+ <img src="images/read-me/match-alert.png" style="width: 75%">
+
+ A green *MATCH* alert will pop up, when you’ve successfully found a pair. In the screenshot, above, the set of polaroid cameras had just been discovered, so the word *polaroid* is superimposed over the word *MATCH*.
+
 ## Favicon
 
  <img src="images/thinking-brain.png" style="width: 25%">
