@@ -7,6 +7,7 @@
     - [Accessibility](#accessibility)
     - [Two Themes](#two-themes)
     - [Progress at a Glance](#progress-at-a-glance)
+    - [Match Alert](#match-alert)
  + [Favicon](#favicon)
  + [Tech Specs](#tech-specs)
 
