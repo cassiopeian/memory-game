@@ -102,8 +102,8 @@ h2 {
 }
 #progress-bar {
     width: 0;
-    background-color: #CDDC39;
-    background-image: linear-gradient(8deg, #269c5b, transparent);
+    background-color: rgb(203, 220, 56);
+    background-image: linear-gradient(8deg, rgb(38, 156, 91), transparent);
 }
 #moves-counter {
     color: rgb(111, 138, 168);
@@ -259,7 +259,7 @@ footer {
 #copyright {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 10px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 8px 30px;
     margin: 0;
 }
