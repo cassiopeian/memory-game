@@ -67,6 +67,11 @@ h2 {
     height: 1.2rem;
     cursor: pointer;
 }
+@media (hover: hover) {
+    .icons:hover {
+        filter: brightness(1.2);
+    }
+}
 #settings-icon {
     margin-left: 1rem;
 }
