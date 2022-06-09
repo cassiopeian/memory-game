@@ -72,6 +72,9 @@ h2 {
         filter: brightness(1.2);
     }
 }
+.icons:active {
+    filter: brightness(1.2);
+}
 #settings-icon {
     margin-left: 1rem;
 }
