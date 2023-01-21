@@ -270,6 +270,17 @@ h2 {
     padding-right: 0.4rem;
     margin: 0;
 }
+label {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+#toggle-announcement {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
 /* FOOTER */
 
