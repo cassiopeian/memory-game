@@ -281,6 +281,28 @@ label {
     width: 0;
     height: 0;
 }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(155, 151, 153);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgb(51, 49, 50);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
 /* FOOTER */
 
