@@ -303,6 +303,18 @@ label {
     -webkit-transition: .4s;
     transition: .4s;
 }
+input:checked + .slider {
+    background-color: rgb(222, 167, 167);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(222, 167, 167);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+    background-color: rgb(124, 29, 48);
+}
 
 /* FOOTER */
 
