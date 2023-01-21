@@ -269,6 +269,7 @@ h2 {
     color: rgb(55, 69, 84);
     padding-right: 0.4rem;
     margin: 0;
+    cursor: default;
 }
 label {
     position: relative;
