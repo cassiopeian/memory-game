@@ -315,6 +315,12 @@ input:checked + .slider:before {
     transform: translateX(13px);
     background-color: rgb(124, 29, 48);
 }
+.slider.round {
+    border-radius: 17px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
 
 /* FOOTER */
 
