@@ -231,6 +231,11 @@ aside {
     color: rgb(155, 151, 153);
     cursor: pointer;
 }
+@media (hover: hover) {
+    .close:hover {
+        opacity: .5;
+    }
+}
 h2 {
     font-size: 1.5rem;
     text-transform: lowercase;
