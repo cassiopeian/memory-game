@@ -222,6 +222,15 @@ aside {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1;}
 }
+.close {
+    float: right;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(155, 151, 153);
+    cursor: pointer;
+}
 h2 {
     font-size: 1.5rem;
     text-transform: lowercase;
