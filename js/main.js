@@ -177,6 +177,9 @@ let catDeck = [
     }
 ];
 
+// by default, display the match announcements
+$('#toggle-announcement').prop('checked', true);
+
 function randomizeCards(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
