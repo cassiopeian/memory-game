@@ -449,3 +449,8 @@ $('#cats').on('click', function() {
 
     selectTile();
 });
+
+$('.close').on('click', function() {
+    // close the settings box
+    $('aside').css('display', 'none');
+});
