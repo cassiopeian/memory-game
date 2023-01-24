@@ -88,6 +88,7 @@ h2 {
     font-weight: bold;
     font-style: normal;
     text-transform: uppercase;
+    cursor: default;
 }
 #progress-wrapper {
     display: flex;
