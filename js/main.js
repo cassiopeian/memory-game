@@ -180,6 +180,14 @@ let catDeck = [
 // by default, display the match announcements
 $('#toggle-announcement').prop('checked', true);
 
+// enable enter key to select checkbox
+$('input:checkbox').keypress(function(e) {
+    e.preventDefault();
+    if ((e.keyCode ? e.keyCode : e.which) == 13) {
+        $(this).trigger('click');
+    }
+});
+
 function randomizeCards(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
