@@ -177,6 +177,11 @@ let catDeck = [
     }
 ];
 
+// add visible focus to the toggler oval
+$('#toggle-announcement').on('focus', function() {
+    $('#toggler-container label').addClass('pseudo-focus');
+});
+
 // by default, display the match announcements
 $('#toggle-announcement').prop('checked', true);
 
