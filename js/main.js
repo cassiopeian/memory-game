@@ -177,9 +177,13 @@ let catDeck = [
     }
 ];
 
-// add visible focus to the toggler oval
-$('#toggle-announcement').on('focus', function() {
-    $('#toggler-container label').addClass('pseudo-focus');
+
+$(window).keyup(function(e) {
+    // if the checkbox is focused via the tab key
+    if ((e.keyCode ? e.keyCode : e.which) == 9 && $('#toggle-announcement:focus').length) {
+        // add a focus ring around the toggler oval
+        $('#toggler-container label').addClass('pseudo-focus');
+    }
 });
 
 // remove visible focus from the toggler oval
