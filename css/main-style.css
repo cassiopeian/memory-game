@@ -304,6 +304,10 @@ label {
     width: 30px;
     height: 17px;
 }
+.pseudo-focus {
+    outline: -webkit-focus-ring-color auto 2px;
+    border-radius: 17px;
+}
 #toggle-announcement {
     opacity: 0;
     width: 0;
