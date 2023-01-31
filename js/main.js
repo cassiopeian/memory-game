@@ -182,6 +182,11 @@ $('#toggle-announcement').on('focus', function() {
     $('#toggler-container label').addClass('pseudo-focus');
 });
 
+// remove visible focus from the toggler oval
+$('#toggle-announcement').on('focusout', function() {
+    $('#toggler-container label').removeClass('pseudo-focus');
+});
+
 // by default, display the match announcements
 $('#toggle-announcement').prop('checked', true);
 
