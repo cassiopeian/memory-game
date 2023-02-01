@@ -177,7 +177,12 @@ let catDeck = [
     }
 ];
 
-let sushiDeck = [];
+let sushiDeck = [
+    {
+        item: 'ikura',
+        image: 'images/sushi-deck/ikura.svg'
+    }
+];
 
 $(window).keyup(function(e) {
     // if the checkbox is focused via the tab key
