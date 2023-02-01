@@ -177,6 +177,7 @@ let catDeck = [
     }
 ];
 
+let sushiDeck = [];
 
 $(window).keyup(function(e) {
     // if the checkbox is focused via the tab key
