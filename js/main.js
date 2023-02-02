@@ -189,6 +189,10 @@ let sushiDeck = [
     {
         item: 'rainbow roll',
         image: 'images/sushi-deck/rainbow.svg'
+    },
+    {
+        item: 'saba',
+        image: 'images/sushi-deck/saba.svg'
     }
 ];
 
