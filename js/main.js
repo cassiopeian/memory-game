@@ -199,6 +199,10 @@ let sushiDeck = [
         image: 'images/sushi-deck/salmon-maki.svg'
     },
     {
+        item: 'soy sauce',
+        image: 'images/sushi-deck/soy-sauce.svg'
+    },
+    {
         item: 'tamago',
         image: 'images/sushi-deck/tamago.svg'
     }
