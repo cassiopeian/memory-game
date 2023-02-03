@@ -252,20 +252,24 @@ function randomizeCards(array) {
 
 randomizeCards(cardFaces);
 
-// for each array element, create a game tile
-cardFaces.forEach(element => {
-    gameTile = $('<button class="tile" type="button"></button>');
-    cardImg = $('<img class="card-faces" src="" />');
+function selectDeck(deck) {
+    // for each array element, create a game tile
+    deck.forEach(element => {
+        gameTile = $('<button class="tile" type="button"></button>');
+        cardImg = $('<img class="card-faces" src="" />');
 
-    // add an array image to each img tag's src attribute
-    $(cardImg).attr('src', element.image);  
+        // add an array image to each img tag's src attribute
+        $(cardImg).attr('src', element.image);  
 
-    // set an img inside each button (i.e., game tile)
-    $(gameTile).append(cardImg);
+        // set an img inside each button (i.e., game tile)
+        $(gameTile).append(cardImg);
 
-    // place all the game tiles inside the gameboard
-    $('#gameboard').append(gameTile);
-});
+        // place all the game tiles inside the gameboard
+        $('#gameboard').append(gameTile);
+    });
+};
+
+selectDeck(cardFaces);
 
 // selectedPair.length reverts to 0 when a match is made, so . . .
 function countMoves() {
