@@ -466,19 +466,7 @@ $('#trends').on('click', function() {
 
     randomizeCards(cardFaces);
 
-    cardFaces.forEach(element => {
-        gameTile = $('<button class="tile" type="button"></button>');
-        cardImg = $('<img class="card-faces" src="" />');
-
-        // add an array image to each img tag's src attribute
-        $(cardImg).attr('src', element.image);  
-
-        // set an img inside each button (i.e., game tile)
-        $(gameTile).append(cardImg);
-
-        // place all the game tiles inside the gameboard
-        $('#gameboard').append(gameTile);
-    });
+    selectDeck(cardFaces);
 
     selectTile();
 });
