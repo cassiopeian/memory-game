@@ -321,16 +321,7 @@ function announcementCheck(deck) {
 // announce the name of the matched item
 function announceMatch() {
     if ($('#toggle-announcement').is(':checked') === true) {
-        // by looping through the game array
-        cardFaces.forEach(matched => {
-            // to check whether the object's image property matches the image paths currently sitting in the selectedPair array (at this point in pairChecker, index items 0 and 1 are the same)
-            if (matched.image == selectedPair[0]) {
-                $('#match-type').html(`${matched.item}!`);
-                $('#match-announcement').fadeIn(400, function() {
-                    $('#match-announcement').delay(1500).fadeOut(200);
-                });
-            }
-        });
+        announcementCheck(cardFaces);
 
         catDeck.forEach(matched => {
             if (matched.image == selectedPair[0]) {
