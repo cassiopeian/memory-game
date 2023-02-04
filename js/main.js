@@ -322,15 +322,7 @@ function announcementCheck(deck) {
 function announceMatch() {
     if ($('#toggle-announcement').is(':checked') === true) {
         announcementCheck(cardFaces);
-
-        catDeck.forEach(matched => {
-            if (matched.image == selectedPair[0]) {
-                $('#match-type').html(`${matched.item}!`);
-                $('#match-announcement').fadeIn(400, function() {
-                    $('#match-announcement').delay(1500).fadeOut(200);
-                });
-            }
-        });
+        announcementCheck(catDeck);
     } else {
         return;
     }
