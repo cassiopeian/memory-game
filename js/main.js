@@ -205,6 +205,10 @@ let sushiDeck = [
     {
         item: 'tamago',
         image: 'images/sushi-deck/tamago.svg'
+    },
+    {
+        item: 'temaki',
+        image: 'images/sushi-deck/temaki.svg'
     }
 ];
 
