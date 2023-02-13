@@ -531,6 +531,17 @@ $('#cats').on('click', function() {
     selectTile();
 });
 
+// selects the "sushi menu" theme
+$('#sushi').on('click', function() {
+    cleanSlate();
+
+    randomizeCards(sushiDeck);
+
+    selectDeck(sushiDeck);
+
+    selectTile();
+});
+
 $('.close').on('click', function() {
     // close the settings box
     $('aside').css('display', 'none');
