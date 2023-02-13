@@ -375,6 +375,7 @@ function announceMatch() {
     if ($('#toggle-announcement').is(':checked') === true) {
         announcementCheck(cardFaces);
         announcementCheck(catDeck);
+        announcementCheck(sushiDeck);
     } else {
         return;
     }
