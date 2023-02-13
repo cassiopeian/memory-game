@@ -29,11 +29,11 @@
 
  The *Reset* and *Settings* icon buttons are also keyboard focusable.
 
- ### Two Themes
+ ### Three Themes
 
  <img src="images/read-me/choose-theme.png" style="width: 75%">
 
- To choose between the Lifestyle Trends and Lucky Cats game themes, click the cogwheel icon.
+ To choose between the Lifestyle Trends, Lucky Cats, and Sushi Menu game themes, click the cogwheel icon.
 
  ### Progress at a Glance
 
