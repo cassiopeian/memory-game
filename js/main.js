@@ -179,6 +179,10 @@ let catDeck = [
 
 let sushiDeck = [
     {
+        item: 'chopsticks',
+        image: 'images/sushi-deck/chopsticks.svg'
+    },
+    {
         item: 'ikura',
         image: 'images/sushi-deck/ikura.svg'
     },
