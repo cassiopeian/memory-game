@@ -217,6 +217,46 @@ let sushiDeck = [
     {
         item: 'yaki onigiri',
         image: 'images/sushi-deck/yaki-onigiri.svg'
+    },
+    {
+        item: 'chopsticks',
+        image: 'images/sushi-deck/chopsticks.svg'
+    },
+    {
+        item: 'ikura',
+        image: 'images/sushi-deck/ikura.svg'
+    },
+    {
+        item: 'philly roll',
+        image: 'images/sushi-deck/philadelphia.svg'
+    },
+    {
+        item: 'rainbow roll',
+        image: 'images/sushi-deck/rainbow.svg'
+    },
+    {
+        item: 'saba',
+        image: 'images/sushi-deck/saba.svg'
+    },
+    {
+        item: 'salmon roll',
+        image: 'images/sushi-deck/salmon-maki.svg'
+    },
+    {
+        item: 'soy sauce',
+        image: 'images/sushi-deck/soy-sauce.svg'
+    },
+    {
+        item: 'tamago',
+        image: 'images/sushi-deck/tamago.svg'
+    },
+    {
+        item: 'temaki',
+        image: 'images/sushi-deck/temaki.svg'
+    },
+    {
+        item: 'yaki onigiri',
+        image: 'images/sushi-deck/yaki-onigiri.svg'
     }
 ];
 
