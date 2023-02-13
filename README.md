@@ -5,7 +5,7 @@
  + [Introduction](#introduction)
  + [Features](#features)
     - [Accessibility](#accessibility)
-    - [Two Themes](#two-themes)
+    - [Three Themes](#three-themes)
     - [Progress at a Glance](#progress-at-a-glance)
     - [Match Alert](#match-alert)
  + [Favicon](#favicon)
