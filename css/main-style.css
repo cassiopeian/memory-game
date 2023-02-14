@@ -479,6 +479,9 @@ footer {
         height: 5.5rem;
         width: 5.5rem;
     }
+    #modal-box {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
