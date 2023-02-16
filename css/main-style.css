@@ -224,6 +224,9 @@ aside {
     to {top: 0; opacity: 1;}
 }
 .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: right;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.4rem;
