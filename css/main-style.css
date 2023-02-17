@@ -228,11 +228,6 @@ aside {
     align-items: center;
     justify-content: center;
     float: right;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-style: normal;
-    color: rgb(155, 151, 153);
     cursor: pointer;
     border: none;
     border-radius: 100%;
@@ -243,6 +238,13 @@ aside {
     .close:hover {
         opacity: .5;
     }
+}
+.close span {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(155, 151, 153);
 }
 h2 {
     font-size: 1.5rem;
