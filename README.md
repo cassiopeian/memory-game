@@ -49,6 +49,8 @@
 
  A green *MATCH* alert will pop up, when you’ve successfully found a pair. In the screenshot, above, the set of polaroid cameras had just been discovered, so the word *polaroid* is superimposed over the word *MATCH*.
 
+ This feature can be disabled by toggling the *Match Announcement* slider in the settings menu.
+
 ## Favicon
 
  <img src="images/thinking-brain.png" style="width: 25%">
