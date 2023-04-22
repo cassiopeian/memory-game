@@ -1,4 +1,15 @@
-/* GLOBAL */
+/* -------------------
+STYLE SECTIONS 
+1. GLOBAL
+2. MAIN
+3. SIDE PANEL CONTENT
+4. GAMEBOARD
+5. SETTINGS MODAL
+6. FOOTER
+7. MEDIA QUERIES
+------------------- */
+
+/* 1. GLOBAL */
 
 html {
     font-size: 16px;
@@ -18,7 +29,7 @@ body {
     padding: 0;
 }
 
-/* MAIN */
+/* 2. MAIN */
 
 main {
     display: flex;
@@ -48,7 +59,7 @@ h2 {
     color: rgb(85, 148, 121);
 }
 
-/* SIDE PANEL CONTENT */
+/* 3. SIDE PANEL CONTENT */
 
 #side-panel {
     width: 35%;
@@ -140,7 +151,7 @@ h2 {
     margin: 0;
 }
 
-/* GAMEBOARD */
+/* 4. GAMEBOARD */
 
 #gameboard-container {
     display: flex;
@@ -189,7 +200,7 @@ h2 {
     cursor: not-allowed;
 }
 
-/* SETTINGS MODAL */
+/* 5. SETTINGS MODAL */
 
 aside {
     display: none;
@@ -359,7 +370,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/* FOOTER */
+/* 6. FOOTER */
 
 footer {
     background-color: rgb(124, 29, 48);
@@ -376,7 +387,7 @@ footer {
     margin: 0;
 }
 
-/* MEDIA QUERIES */
+/* 7. MEDIA QUERIES */
 
 @media only screen and (max-width: 1313px) {
     #gameboard {
