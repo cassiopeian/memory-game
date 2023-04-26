@@ -411,13 +411,14 @@ footer {
         flex-grow: 0;
     }
 
-    /* GAMEBOARD */
+    /* SIDE PANEL CONTENT */
 
-    #gameboard-container {
-        width: 100%;
-    }
     #side-panel {
         width: 100%;
+    }
+    #icons-wrapper {
+        order: 3;
+        margin-bottom: 0;
     }
     #side-panel-content {
         display: flex;
@@ -435,9 +436,11 @@ footer {
     #progress-tracker {
         margin-right: .5rem;
     }
-    #icons-wrapper {
-        order: 3;
-        margin-bottom: 0;
+    
+    /* GAMEBOARD */
+
+    #gameboard-container {
+        width: 100%;
     }
 }
 
@@ -463,15 +466,18 @@ footer {
         height: 7.5rem;
         width: 7.5rem;
     }
+
+    /* SIDE PANEL CONTENT */
+
+    .icons {
+        height: .9rem;
+    }
     #moves-counter,
     #progress-tracker {
         font-size: .8rem;
     }
     #progress-container {
         width: 15rem;
-    }
-    .icons {
-        height: .9rem;
     }
 }
 
@@ -501,7 +507,7 @@ footer {
 @media only screen and (max-width: 415px) {
 
     /* MAIN */
-    
+
     h1 {
         padding: 1rem 0 .5rem .3rem;
     }
@@ -515,28 +521,35 @@ footer {
         padding: 1rem;
         margin: .5rem 0 1.5rem 0;
     }
-    #progress-container {
-        width: 11rem;
-    }
     .tile {
         height: 5.5rem;
         width: 5.5rem;
     }
+
+    /* SIDE PANEL CONTENT */
+
+    #progress-container {
+        width: 11rem;
+    }
+
     #modal-box {
         width: 95%;
     }
 }
 
 @media only screen and (max-width: 375px) {
-    #progress-container {
-        width: 10rem;
+
+    /* SIDE PANEL CONTENT */
+
+    #settings-icon {
+        margin-left: .5rem;
     }
     #progress-container,
     #progress-bar {
         height: .8rem;
     }
-    #settings-icon {
-        margin-left: .5rem;
+    #progress-container {
+        width: 10rem;
     }
 
     /* GAMEBOARD */
