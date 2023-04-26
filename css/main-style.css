@@ -390,6 +390,9 @@ footer {
 /* 7. MEDIA QUERIES */
 
 @media only screen and (max-width: 1313px) {
+    
+    /* GAMEBOARD */
+    
     #gameboard {
         gap: 2%;
     }
@@ -404,6 +407,9 @@ footer {
         flex-flow: column-reverse;
         flex-grow: 0;
     }
+
+    /* GAMEBOARD */
+
     #gameboard-container {
         width: 100%;
     }
@@ -433,6 +439,9 @@ footer {
 }
 
 @media only screen and (max-width: 710px) {
+
+    /* GAMEBOARD */
+
     #gameboard {
         grid-template-columns: repeat(4, max-content);
         grid-template-rows: repeat(5, max-content);
@@ -441,6 +450,9 @@ footer {
 }
 
 @media only screen and (max-width: 615px) {
+
+    /* GAMEBOARD */
+
     #gameboard {
         gap: 2%;
     }
@@ -468,6 +480,9 @@ footer {
         font-size: 1.5rem;
         padding: 2rem .5rem;
     }
+
+    /* GAMEBOARD */
+
     #gameboard-container {
         padding: 1.35rem 0;
     }
@@ -481,6 +496,9 @@ footer {
     h1 {
         padding: 1rem 0 .5rem .3rem;
     }
+
+    /* GAMEBOARD */
+    
     #gameboard-container {
         padding: 0 0 1rem 0;
     }
@@ -511,6 +529,9 @@ footer {
     #settings-icon {
         margin-left: .5rem;
     }
+
+    /* GAMEBOARD */
+
     .tile {
         height: 5rem;
         width: 5rem;
