@@ -403,6 +403,9 @@ footer {
 }
 
 @media only screen and (max-width: 1173px) {
+
+    /* MAIN */
+
     main {
         flex-flow: column-reverse;
         flex-grow: 0;
@@ -473,6 +476,9 @@ footer {
 }
 
 @media only screen and (max-width: 570px) {
+
+    /* MAIN */
+
     header {
         padding: 0;
     }
@@ -493,12 +499,15 @@ footer {
 }
 
 @media only screen and (max-width: 415px) {
+
+    /* MAIN */
+    
     h1 {
         padding: 1rem 0 .5rem .3rem;
     }
 
     /* GAMEBOARD */
-    
+
     #gameboard-container {
         padding: 0 0 1rem 0;
     }
