@@ -546,3 +546,6 @@ $('.close').on('click', function() {
     // close the settings box
     $('aside').css('display', 'none');
 });
+
+// set copyright year
+$('#copyright-year').html(new Date().getFullYear());
