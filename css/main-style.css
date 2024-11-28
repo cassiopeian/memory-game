@@ -122,8 +122,8 @@ h2 {
 }
 #progress-bar {
     width: 0;
-    background-color: rgb(203, 220, 56);
-    background-image: linear-gradient(8deg, rgb(38, 156, 91), transparent);
+    background-color: rgb(38, 156, 91);
+    background-image: linear-gradient(8deg, rgb(203, 220, 56), transparent);
 }
 #moves-counter {
     color: rgb(111, 138, 168);
