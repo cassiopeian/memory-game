@@ -422,7 +422,7 @@ footer {
     }
     #side-panel-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem;
     }
