@@ -477,7 +477,7 @@ footer {
     }
     #moves-counter,
     #progress-tracker {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     #progress-container {
         width: 15rem;
