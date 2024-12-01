@@ -473,7 +473,7 @@ footer {
     /* SIDE PANEL CONTENT */
 
     .icons {
-        height: .9rem;
+        height: 1rem;
     }
     #moves-counter,
     #progress-tracker {
