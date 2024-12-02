@@ -70,6 +70,8 @@ h2 {
     margin-bottom: 1.5rem;
 }
 #icons-wrapper button {
+    display: flex;
+    align-items: center;
     background-color: inherit;
     border: none;
     padding: 0;
