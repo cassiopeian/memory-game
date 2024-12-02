@@ -128,6 +128,8 @@ h2 {
     background-image: linear-gradient(8deg, rgb(203, 220, 56), transparent);
 }
 #moves-counter {
+    display: flex;
+    align-items: center;
     color: rgb(111, 138, 168);
 }
 #moves-counter img {
