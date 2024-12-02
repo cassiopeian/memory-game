@@ -135,6 +135,9 @@ h2 {
 #moves-counter img {
     height: 1rem;
 }
+#moves-num {
+    padding: 0 0 0 3px;
+}
 #match-announcement {
     display: none;
     background-image: url('../images/green-match.svg');
