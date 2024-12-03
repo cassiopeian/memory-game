@@ -490,6 +490,9 @@ footer {
     #progress-tracker {
         font-size: 1rem;
     }
+    #moves-counter img {
+        height: 1rem;
+    }
     #progress-container {
         width: 14rem;
     }
