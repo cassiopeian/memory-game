@@ -417,6 +417,9 @@ footer {
 
     /* MAIN */
 
+    header {
+        padding: 0;
+    }
     main {
         flex-flow: column-reverse;
         flex-grow: 0;
@@ -496,9 +499,6 @@ footer {
 
     /* MAIN */
 
-    header {
-        padding: 0;
-    }
     h1 {
         font-size: 1.5rem;
         padding: 2rem .5rem;
