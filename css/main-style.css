@@ -111,6 +111,7 @@ h2 {
 #progress-tracker {
     font-weight: 400;
     color: rgb(30, 57, 96);
+    letter-spacing: .1rem;
     margin: 0;
 }
 #progress-container,
