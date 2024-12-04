@@ -137,7 +137,7 @@ h2 {
     height: 1.3rem;
 }
 #moves-num {
-    padding: 0 0 0 3px;
+    padding: 0 0 0 .4rem;
 }
 #match-announcement {
     display: none;
