@@ -520,6 +520,15 @@ footer {
     }
 }
 
+@media only screen and (max-width: 440px) {
+    
+    /* SETTINGS MODAL */
+
+    #modal-box {
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 415px) {
 
     /* MAIN */
@@ -546,12 +555,6 @@ footer {
 
     #progress-container {
         width: 11rem;
-    }
-
-    /* SETTINGS MODAL */
-
-    #modal-box {
-        width: 95%;
     }
 }
 
