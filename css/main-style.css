@@ -177,7 +177,7 @@ h2 {
     grid-template-columns: repeat(5, max-content);
     grid-template-rows: repeat(4, max-content);
     gap: 2%;
-    padding: 1.25rem;
+    margin: 1.25rem;
 }
 #gameboard-container,
 #gameboard {
